@@ -21,8 +21,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-border/40 bg-background/80">
           <nav className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">
-              nocodeguy
+            <div className="flex items-center">
+              <Link href="/" className="text-xl font-semibold text-gray-900 hover:text-gray-700 transition-colors">
+                nocodeguy
+              </Link>
             </div>
             <div className="flex gap-8">
               <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</Link>

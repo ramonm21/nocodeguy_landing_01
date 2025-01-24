@@ -41,10 +41,10 @@ export default function Home() {
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
-                href="/guide"
+                href="/blog"
                 className="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gray-200 hover:border-gray-300 transition-all duration-300 text-sm font-medium text-gray-600 hover:text-gray-900"
               >
-                <span>Read the Guide</span>
+                <span>Articles</span>
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
@@ -186,7 +186,7 @@ export default function Home() {
                     href="/blog/ai-writing-assistant"
                     className="inline-flex items-center gap-2 text-primary hover:gap-3 transition-all"
                   >
-                    <span>Read the Guide</span>
+                    <span>Articles</span>
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
@@ -220,7 +220,7 @@ export default function Home() {
                     href="/blog/ai-image-generator"
                     className="inline-flex items-center gap-2 text-primary hover:gap-3 transition-all"
                   >
-                    <span>Read the Guide</span>
+                    <span>Articles</span>
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>

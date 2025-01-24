@@ -1,8 +1,9 @@
 {
+  "/not-found": "app/not-found.js",
   "/projects/page": "app/projects/page.js",
-  "/apps/page": "app/apps/page.js",
-  "/privacy/page": "app/privacy/page.js",
+  "/page": "app/page.js",
   "/blog/page": "app/blog/page.js",
-  "/imprint/page": "app/imprint/page.js",
-  "/page": "app/page.js"
+  "/privacy/page": "app/privacy/page.js",
+  "/apps/page": "app/apps/page.js",
+  "/imprint/page": "app/imprint/page.js"
 }
