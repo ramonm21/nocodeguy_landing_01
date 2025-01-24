@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Bot, Code2, Sparkles, Twitter, Zap, Terminal, Rocket } from "lucide-react";
+import { ArrowRight, Bot, Code2, Sparkles, Twitter, Zap, Terminal, Rocket, Brain, Wand2, Blocks } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-transparent to-blue-500/20"></div>
         <div className="max-w-6xl mx-auto relative">
           <div className="flex flex-col items-center">
-            <div className="mb-6 px-6 py-1.5 rounded-full bg-teal-50 text-teal-600 text-sm font-medium">
+            <div className="mb-6 px-6 py-1.5 rounded-full bg-teal-50 text-teal-600 text-sm font-medium animate-gentle-bounce hover:cursor-pointer">
               Zero Code, Infinite Possibilities
             </div>
             <div className="text-center max-w-5xl">
@@ -53,47 +53,94 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-32 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="group relative p-8 rounded-2xl bg-card hover:shadow-xl transition-all duration-300">
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative">
-                <div className="w-16 h-16 rounded-xl bg-purple-500/10 flex items-center justify-center mb-6">
-                  <Zap className="h-8 w-8 text-purple-500" />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">AI Adventures</h3>
-                <p className="text-muted-foreground">
-                  Follow along as I explore and break down the latest AI tools into simple, 
-                  actionable projects anyone can build.
-                </p>
+      <section className="py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 justify-items-center">
+            {/* AI Lab */}
+            <div className="feature-card group relative flex flex-col items-center text-center w-full max-w-[320px] p-8 rounded-3xl bg-violet-50/50 hover:bg-violet-50">
+              <div className="feature-icon w-16 h-16 rounded-2xl bg-violet-100 flex items-center justify-center mb-6">
+                <Brain className="w-8 h-8 text-violet-600" />
               </div>
+              <h3 className="text-2xl font-semibold text-violet-600 mb-6">AI Lab</h3>
+              <ul className="space-y-5 mb-8 w-full">
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-violet-600 mt-2 shrink-0" />
+                  <span className="text-gray-600">Weekly AI tool breakdowns</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-violet-600 mt-2 shrink-0" />
+                  <span className="text-gray-600">Step-by-step project guides</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-violet-600 mt-2 shrink-0" />
+                  <span className="text-gray-600">Real-world applications</span>
+                </li>
+              </ul>
+              <Link
+                href="/lab"
+                className="group inline-flex items-center gap-2 text-violet-600 hover:text-violet-700 font-medium"
+              >
+                <span>Explore the Lab</span>
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
-            <div className="group relative p-8 rounded-2xl bg-card hover:shadow-xl transition-all duration-300">
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative">
-                <div className="w-16 h-16 rounded-xl bg-blue-500/10 flex items-center justify-center mb-6">
-                  <Bot className="h-8 w-8 text-blue-500" />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">No-Code Magic</h3>
-                <p className="text-muted-foreground">
-                  Discover how to create powerful AI applications using visual tools and 
-                  automated workflows.
-                </p>
+
+            {/* No-Code Spells */}
+            <div className="feature-card group relative flex flex-col items-center text-center w-full max-w-[320px] p-8 rounded-3xl bg-pink-50/50 hover:bg-pink-50">
+              <div className="feature-icon w-16 h-16 rounded-2xl bg-pink-100 flex items-center justify-center mb-6">
+                <Wand2 className="w-8 h-8 text-pink-600" />
               </div>
+              <h3 className="text-2xl font-semibold text-pink-600 mb-6">No-Code Spells</h3>
+              <ul className="space-y-5 mb-8 w-full">
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-pink-600 mt-2 shrink-0" />
+                  <span className="text-gray-600">Visual automation recipes</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-pink-600 mt-2 shrink-0" />
+                  <span className="text-gray-600">AI integration patterns</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-pink-600 mt-2 shrink-0" />
+                  <span className="text-gray-600">Ready-to-use templates</span>
+                </li>
+              </ul>
+              <Link
+                href="/spells"
+                className="group inline-flex items-center gap-2 text-pink-600 hover:text-pink-700 font-medium"
+              >
+                <span>Learn the Spells</span>
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
-            <div className="group relative p-8 rounded-2xl bg-card hover:shadow-xl transition-all duration-300">
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-500/5 to-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative">
-                <div className="w-16 h-16 rounded-xl bg-cyan-500/10 flex items-center justify-center mb-6">
-                  <Rocket className="h-8 w-8 text-cyan-500" />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">Future Skills</h3>
-                <p className="text-muted-foreground">
-                  Learn the essential skills needed to thrive in the AI-powered future of 
-                  no-code development.
-                </p>
+
+            {/* Future Stack */}
+            <div className="feature-card group relative flex flex-col items-center text-center w-full max-w-[320px] p-8 rounded-3xl bg-emerald-50/50 hover:bg-emerald-50">
+              <div className="feature-icon w-16 h-16 rounded-2xl bg-emerald-100 flex items-center justify-center mb-6">
+                <Rocket className="w-8 h-8 text-emerald-600" />
               </div>
+              <h3 className="text-2xl font-semibold text-emerald-600 mb-6">Future Stack</h3>
+              <ul className="space-y-5 mb-8 w-full">
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 shrink-0" />
+                  <span className="text-gray-600">AI tool mastery paths</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 shrink-0" />
+                  <span className="text-gray-600">Workflow optimization</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 shrink-0" />
+                  <span className="text-gray-600">Future-proof strategies</span>
+                </li>
+              </ul>
+              <Link
+                href="/stack"
+                className="group inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-medium"
+              >
+                <span>Master the Stack</span>
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
           </div>
         </div>
