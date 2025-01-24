@@ -231,35 +231,31 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-32 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
-          <div className="relative p-8 sm:p-12 rounded-2xl bg-card overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-blue-500/5 to-cyan-500/5"></div>
-            <div className="relative text-center">
-              <Sparkles className="h-12 w-12 mx-auto mb-6 text-primary" />
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Join the Adventure</h2>
-              <p className="text-muted-foreground mb-8">
-                Get weekly updates on new AI tools, no-code tips, and exclusive behind-the-scenes 
-                looks at my latest projects.
-              </p>
-              <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                <input
-                  type="email"
-                  placeholder="your@email.com"
-                  className="flex-1 px-6 py-3 rounded-full bg-background border-2 border-muted hover:border-muted-foreground/50 focus:border-primary transition-colors"
-                />
-                <button
-                  type="submit"
-                  className="group px-6 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
-                >
-                  <span className="inline-flex items-center gap-2">
-                    Subscribe
-                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </button>
-              </form>
-            </div>
+      <section className="py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="inline-block px-4 py-1.5 mb-6 rounded-full text-sm font-medium bg-emerald-50 text-emerald-600">
+            Join the Community
           </div>
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-4">
+            Stay in the Loop
+          </h2>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            Get weekly updates on new AI tools, tutorials, and behind-the-scenes looks at my latest projects.
+          </p>
+          <form className="flex gap-3 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="flex-1 min-w-0 px-4 py-3 text-base text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+              required
+            />
+            <button
+              type="submit"
+              className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-emerald-600 rounded-lg shadow-sm hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
+            >
+              Subscribe
+            </button>
+          </form>
         </div>
       </section>
     </main>
