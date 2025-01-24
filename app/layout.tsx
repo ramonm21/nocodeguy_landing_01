@@ -26,6 +26,7 @@ export default function RootLayout({
             </div>
             <div className="flex gap-8">
               <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</Link>
+              <Link href="/apps" className="text-muted-foreground hover:text-foreground transition-colors">Apps</Link>
               <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
               <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
               <Link href="https://x.com/nocodeguy_" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -66,43 +67,16 @@ export default function RootLayout({
               <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
-                    <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Features</h3>
+                    <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Navigation</h3>
                     <ul className="mt-4 space-y-4">
                       <li>
                         <Link href="/projects" className="text-base text-gray-500 hover:text-gray-900">Projects</Link>
                       </li>
                       <li>
-                        <Link href="/lab" className="text-base text-gray-500 hover:text-gray-900">AI Lab</Link>
+                        <Link href="/apps" className="text-base text-gray-500 hover:text-gray-900">Apps</Link>
                       </li>
-                      <li>
-                        <Link href="/stack" className="text-base text-gray-500 hover:text-gray-900">Future Stack</Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="mt-12 md:mt-0">
-                    <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Resources</h3>
-                    <ul className="mt-4 space-y-4">
                       <li>
                         <Link href="/blog" className="text-base text-gray-500 hover:text-gray-900">Blog</Link>
-                      </li>
-                      <li>
-                        <Link href="/projects" className="text-base text-gray-500 hover:text-gray-900">Projects</Link>
-                      </li>
-                      <li>
-                        <Link href="/tutorials" className="text-base text-gray-500 hover:text-gray-900">Tutorials</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="md:grid md:grid-cols-2 md:gap-8">
-                  <div>
-                    <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
-                    <ul className="mt-4 space-y-4">
-                      <li>
-                        <Link href="/about/team" className="text-base text-gray-500 hover:text-gray-900">About</Link>
-                      </li>
-                      <li>
-                        <Link href="/contact" className="text-base text-gray-500 hover:text-gray-900">Contact</Link>
                       </li>
                     </ul>
                   </div>
