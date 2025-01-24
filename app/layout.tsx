@@ -25,9 +25,12 @@ export default function RootLayout({
               nocodeguy
             </div>
             <div className="flex gap-8">
-              <a href="#featured" className="text-muted-foreground hover:text-foreground transition-colors">Projects</a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Blog</a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
+              <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</Link>
+              <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
+              <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
+              <Link href="https://x.com/nocodeguy_" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Twitter className="h-5 w-5" />
+              </Link>
             </div>
           </nav>
         </header>
@@ -66,10 +69,10 @@ export default function RootLayout({
                     <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Features</h3>
                     <ul className="mt-4 space-y-4">
                       <li>
-                        <Link href="/lab" className="text-base text-gray-500 hover:text-gray-900">AI Lab</Link>
+                        <Link href="/projects" className="text-base text-gray-500 hover:text-gray-900">Projects</Link>
                       </li>
                       <li>
-                        <Link href="/spells" className="text-base text-gray-500 hover:text-gray-900">No-Code Spells</Link>
+                        <Link href="/lab" className="text-base text-gray-500 hover:text-gray-900">AI Lab</Link>
                       </li>
                       <li>
                         <Link href="/stack" className="text-base text-gray-500 hover:text-gray-900">Future Stack</Link>
@@ -83,10 +86,10 @@ export default function RootLayout({
                         <Link href="/blog" className="text-base text-gray-500 hover:text-gray-900">Blog</Link>
                       </li>
                       <li>
-                        <Link href="/tutorials" className="text-base text-gray-500 hover:text-gray-900">Tutorials</Link>
+                        <Link href="/projects" className="text-base text-gray-500 hover:text-gray-900">Projects</Link>
                       </li>
                       <li>
-                        <Link href="/showcase" className="text-base text-gray-500 hover:text-gray-900">Showcase</Link>
+                        <Link href="/tutorials" className="text-base text-gray-500 hover:text-gray-900">Tutorials</Link>
                       </li>
                     </ul>
                   </div>
@@ -96,13 +99,10 @@ export default function RootLayout({
                     <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
                     <ul className="mt-4 space-y-4">
                       <li>
-                        <Link href="/about" className="text-base text-gray-500 hover:text-gray-900">About</Link>
+                        <Link href="/about/team" className="text-base text-gray-500 hover:text-gray-900">About</Link>
                       </li>
                       <li>
                         <Link href="/contact" className="text-base text-gray-500 hover:text-gray-900">Contact</Link>
-                      </li>
-                      <li>
-                        <Link href="/careers" className="text-base text-gray-500 hover:text-gray-900">Careers</Link>
                       </li>
                     </ul>
                   </div>
@@ -110,10 +110,10 @@ export default function RootLayout({
                     <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
                     <ul className="mt-4 space-y-4">
                       <li>
-                        <Link href="/privacy" className="text-base text-gray-500 hover:text-gray-900">Privacy</Link>
+                        <Link href="/privacy" className="text-base text-gray-500 hover:text-gray-900">Privacy Policy</Link>
                       </li>
                       <li>
-                        <Link href="/terms" className="text-base text-gray-500 hover:text-gray-900">Terms</Link>
+                        <Link href="/imprint" className="text-base text-gray-500 hover:text-gray-900">Imprint</Link>
                       </li>
                     </ul>
                   </div>

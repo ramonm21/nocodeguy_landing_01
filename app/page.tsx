@@ -233,7 +233,7 @@ export default function Home() {
       {/* Newsletter Section */}
       <section className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-block px-4 py-1.5 mb-6 rounded-full text-sm font-medium bg-emerald-50 text-emerald-600">
+          <div className="inline-block px-4 py-1.5 mb-6 rounded-full text-sm font-medium bg-teal-50 text-teal-600">
             Join the Community
           </div>
           <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-4">
@@ -246,12 +246,12 @@ export default function Home() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 min-w-0 px-4 py-3 text-base text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+              className="flex-1 min-w-0 px-4 py-3 text-base text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
               required
             />
             <button
               type="submit"
-              className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-emerald-600 rounded-lg shadow-sm hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
+              className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-teal-500 rounded-lg shadow-sm hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
             >
               Subscribe
             </button>
