@@ -2,14 +2,14 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
-import Twitter from './Twitter';
+import XIcon from './XIcon';
 import MobileNav from './components/MobileNav';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'nocodeguy - Building the Future with AI',
-  description: 'Join me on a journey to explore AI technology and build amazing projects without writing code. Learn how to leverage artificial intelligence in practical ways.',
+  title: 'nocodeguy - Zero Code, Infinite Possibilities',
+  description: 'Join me on a journey where we harness the power of AI to build amazing apps - no coding required.',
 };
 
 export default function RootLayout({
@@ -18,9 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <body className={inter.className}>
-        <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-border/40 bg-background/80">
+        <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 bg-background">
           <nav className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div className="flex items-center">
               <Link href="/" className="text-xl font-semibold text-gray-900 hover:text-gray-700 transition-colors">
@@ -34,15 +34,17 @@ export default function RootLayout({
               <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
               <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
               <Link href="https://x.com/nocodeguy_" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Twitter className="h-5 w-5" />
+                <XIcon className="h-5 w-5" />
               </Link>
             </div>
             {/* Mobile Navigation */}
-            <MobileNav />
+            <div className="flex items-center md:hidden">
+              <MobileNav />
+            </div>
           </nav>
         </header>
         <div className="pt-16">
-          {children}
+          <main>{children}</main>
         </div>
         <footer className="border-t border-gray-200">
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
@@ -58,7 +60,7 @@ export default function RootLayout({
                 <div className="flex space-x-6">
                   <a href="https://twitter.com/nocodeguy" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
                     <span className="sr-only">Twitter</span>
-                    <Twitter className="h-6 w-6" />
+                    <XIcon className="h-6 w-6" />
                   </a>
                   <a href="https://github.com/nocodeguy" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
                     <span className="sr-only">GitHub</span>

@@ -1,8 +1,9 @@
 "use client";
 
-import { ArrowRight, Bot, Code2, Sparkles, Twitter, Zap, Terminal, Rocket, Brain, Wand2, Blocks, Laptop, BookOpen, Lightbulb } from "lucide-react";
+import { ArrowRight, Bot, Code2, Sparkles, Zap, Terminal, Rocket, Brain, Wand2, Blocks, Laptop, BookOpen, Lightbulb } from "lucide-react";
 import Link from "next/link";
 import { NewsletterForm } from "./components/newsletter-form";
+import XIcon from "./XIcon";
 
 export default function Home() {
   return (
@@ -144,7 +145,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-colors"
                   >
-                    <Twitter className="w-4 h-4" />
+                    <XIcon className="w-4 h-4" />
                     <span>Connect on X</span>
                   </Link>
                   <Link
@@ -188,7 +189,13 @@ export default function Home() {
                   Join our community of creators and innovators. Share your ideas, ask questions,
                   and let's build amazing things together.
                 </p>
-                <NewsletterForm />
+                <a
+                  href="#stay-updated"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-colors"
+                >
+                  <span>Subscribe to Newsletter</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
               </div>
             </div>
           </div>
@@ -290,17 +297,15 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Stay Updated
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Get the latest updates on AI tools, no-code development, and tutorials.
-            </p>
+      <section id="stay-updated" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Stay Updated</h2>
+          <p className="mt-4 text-lg leading-8 text-gray-600">
+            Get the latest updates on AI and no-code development, plus exclusive tips and resources.
+          </p>
+          <div className="mt-10">
+            <NewsletterForm />
           </div>
-          <NewsletterForm />
         </div>
       </section>
     </main>
