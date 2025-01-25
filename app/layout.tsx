@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import XIcon from './XIcon';
 import MobileNav from './components/MobileNav';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,6 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="cookieyes"
+          src="https://cdn-cookieyes.com/client_data/a62d4477ce9d9aca7d9f9669/script.js"
+          strategy="beforeInteractive"
+        />
+      </head>
       <body className={inter.className}>
         <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 bg-background">
           <nav className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
