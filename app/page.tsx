@@ -1,13 +1,17 @@
 "use client";
 
-import { ArrowRight, Bot, Code2, Sparkles, Zap, Terminal, Rocket, Brain, Wand2, Blocks, Laptop, BookOpen, Lightbulb } from "lucide-react";
+import { ArrowRight, Bot, Code2, Sparkles, Zap, Terminal, Rocket, Brain, Wand2, Blocks, Laptop, BookOpen, Lightbulb, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { NewsletterForm } from "./components/newsletter-form";
 import XIcon from "./XIcon";
+import XSidebar from "./components/XSidebar";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      {/* X Profile Sidebar */}
+      <XSidebar />
+
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
@@ -34,20 +38,20 @@ export default function Home() {
               Join me on a journey where we harness the power of AI to build amazing apps - no coding required.
               Let's make tech accessible to everyone!
             </p>
-            <div className="mt-10 flex flex-wrap gap-4 justify-center">
-              <Link
-                href="/projects"
-                className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-full bg-teal-500 text-white hover:bg-teal-600 transition-all duration-300 text-sm font-medium"
+            <div className="flex flex-col sm:flex-row gap-4 mt-10">
+              <a
+                href="#stay-updated"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-colors text-lg font-medium"
               >
-                <span>Explore Projects</span>
-                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
+                <span>Get My No-Code Starter Kit</span>
+                <ArrowRight className="w-5 h-5" />
+              </a>
               <Link
                 href="/blog"
-                className="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gray-200 hover:border-gray-300 transition-all duration-300 text-sm font-medium text-gray-600 hover:text-gray-900"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 transition-colors text-lg"
               >
-                <span>Articles</span>
-                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <span>Read Blog</span>
+                <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </div>
@@ -297,13 +301,23 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section id="stay-updated" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="stay-updated" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Stay Updated</h2>
+          <span className="text-sm font-medium text-gray-900 bg-gray-100 px-3 py-1 rounded-full">FREE RESOURCE</span>
+          <h2 className="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">5 AI Tools to Build Apps in 1 Hour</h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
-            Get the latest updates on AI and no-code development, plus exclusive tips and resources.
+            Get instant access to my curated list of game-changing AI tools that will help you build apps faster than ever.
+            Plus, receive weekly tips on no-code development and AI tools.
           </p>
-          <div className="mt-10">
+          <div className="mt-8 flex flex-col items-center">
+            <div className="flex items-center gap-2 text-sm text-gray-600 mb-6">
+              <CheckCircle2 className="h-5 w-5 text-green-500" />
+              <span>Step-by-step PDF guide</span>
+              <CheckCircle2 className="h-5 w-5 text-green-500 ml-4" />
+              <span>Tool comparison matrix</span>
+              <CheckCircle2 className="h-5 w-5 text-green-500 ml-4" />
+              <span>Weekly updates</span>
+            </div>
             <NewsletterForm />
           </div>
         </div>
