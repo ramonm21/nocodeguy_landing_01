@@ -2,6 +2,7 @@
 
 import { ArrowRight, Bot, Code2, Sparkles, Twitter, Zap, Terminal, Rocket, Brain, Wand2, Blocks } from "lucide-react";
 import Link from "next/link";
+import { NewsletterForm } from "./components/newsletter-form";
 
 export default function Home() {
   return (
@@ -232,30 +233,16 @@ export default function Home() {
 
       {/* Newsletter Section */}
       <section className="py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-block px-4 py-1.5 mb-6 rounded-full text-sm font-medium bg-teal-50 text-teal-600">
-            Join the Community
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Stay Updated
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Get the latest updates on AI tools, no-code development, and tutorials.
+            </p>
           </div>
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-4">
-            Stay in the Loop
-          </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Get weekly updates on new AI tools, tutorials, and behind-the-scenes looks at my latest projects.
-          </p>
-          <form className="flex gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 min-w-0 px-4 py-3 text-base text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
-              required
-            />
-            <button
-              type="submit"
-              className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-teal-500 rounded-lg shadow-sm hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
-            >
-              Subscribe
-            </button>
-          </form>
+          <NewsletterForm />
         </div>
       </section>
     </main>
