@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import Twitter from './Twitter';
+import MobileNav from './components/MobileNav';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,7 +27,8 @@ export default function RootLayout({
                 nocodeguy
               </Link>
             </div>
-            <div className="flex gap-8">
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex gap-8">
               <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</Link>
               <Link href="/apps" className="text-muted-foreground hover:text-foreground transition-colors">Apps</Link>
               <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
@@ -35,6 +37,8 @@ export default function RootLayout({
                 <Twitter className="h-5 w-5" />
               </Link>
             </div>
+            {/* Mobile Navigation */}
+            <MobileNav />
           </nav>
         </header>
         <div className="pt-16">
