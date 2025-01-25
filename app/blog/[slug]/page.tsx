@@ -3,9 +3,22 @@ import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { Calendar, Clock } from 'lucide-react';
 import Image from 'next/image';
-import XFeed from '@/app/components/XFeed';
 import AuthorBio from '@/app/components/blog/AuthorBio';
 import ShareOnX from '@/app/components/blog/ShareOnX';
+import ContentUpgrade from '@/app/components/blog/ContentUpgrade';
+import XFeed from '@/app/components/XFeed';
+
+interface Props {
+  params: {
+    slug: string;
+  };
+}
+
+const components = {
+  AuthorBio,
+  ShareOnX,
+  ContentUpgrade,
+};
 
 interface Props {
   params: {
@@ -27,11 +40,12 @@ export default async function BlogPost({ params }: Props) {
     notFound();
   }
 
-  // MDX components configuration with author data
+  // MDX components configuration with data
   const components = {
-    XFeed,
     AuthorBio: () => <AuthorBio author={post.author} />,
     ShareOnX: () => <ShareOnX title={post.title} url={`https://nocodeguy.dev/blog/${post.slug}`} />,
+    ContentUpgrade: () => post.contentUpgrade ? <ContentUpgrade {...post.contentUpgrade} /> : null,
+    XFeed,
   };
 
   return (
