@@ -1,0 +1,43 @@
+---
+title: "Welcome to My Blog"
+description: "This is a test post to demonstrate the blog functionality"
+date: "2025-01-25"
+readTime: "2 min read"
+tags: ["Test", "Welcome"]
+thumbnail: "/images/blog-001.jpg"
+author:
+  name: "Ramon"
+  avatar: "/images/avatar.png"
+  x: "nocodeguy_"
+---
+
+# Welcome to My Blog
+
+This is a test post to demonstrate the blog functionality. Feel free to modify this content.
+
+## Features
+
+- MDX Support
+- Code Highlighting
+- Tag Filtering
+- Author Bio
+- Share on X
+
+```javascript
+// Example code block
+const greeting = "Hello, World!";
+console.log(greeting);
+```
+
+## Next Steps
+
+1. Add more posts
+2. Customize the styling
+3. Add more features
+
+<AuthorBio author={frontmatter.author} />
+
+<ShareOnX 
+  title={frontmatter.title}
+  url="https://nocodeguy.dev/blog/welcome-to-my-blog"
+/>
