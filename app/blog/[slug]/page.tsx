@@ -44,7 +44,7 @@ export default async function BlogPost({ params }: Props) {
   const components = {
     AuthorBio: () => <AuthorBio author={post.author} />,
     ShareOnX: () => <ShareOnX title={post.title} url={`https://nocodeguy.dev/blog/${post.slug}`} />,
-    ContentUpgrade: () => post.contentUpgrade ? <ContentUpgrade {...post.contentUpgrade} /> : null,
+    ContentUpgrade: () => post.contentUpgrade ? <ContentUpgrade upgrade={post.contentUpgrade} /> : null,
     XFeed,
   };
 
