@@ -56,7 +56,7 @@ export function NewsletterForm() {
             'Sending...'
           ) : (
             <>
-              <span>Get Free Guide</span>
+              <span>Get Started</span>
               <ArrowRight className="w-4 h-4" />
             </>
           )}

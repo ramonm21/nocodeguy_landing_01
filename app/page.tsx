@@ -130,20 +130,19 @@ export default function Home() {
                 <h2 className="text-3xl font-bold">Hey there! 👋</h2>
                 <div className="space-y-4 text-gray-600">
                   <p>
-                    I'm Ramon, and I'm passionate about making technology accessible to everyone. As a developer
-                    turned no-code advocate, I've seen firsthand how AI and no-code tools are revolutionizing
-                    the way we build digital solutions.
+                  I'm Ramon, and I'm exploring the intersection of AI tools, modern tech, and independent creation.
+                  After discovering how AI and no-code tools are transforming the way we work and build,
+                  I'm documenting my journey from enthusiast to creator.
                   </p>
                   <p>
-                    My mission is to help creators, entrepreneurs, and innovators bring their ideas to life
-                    without getting stuck in technical complexities. Whether you're a seasoned developer looking
-                    to work smarter or a complete beginner with a brilliant idea, I'm here to guide you through
-                    the exciting world of AI-powered no-code development.
+                  My mission is to help fellow explorers navigate the rapidly evolving tech landscape.
+                  Whether you're curious about AI tools, want to build your first project,
+                  or are looking to become an independent creator - I share everything I learn along the way.
                   </p>
                   <p>
-                    Through tutorials, guides, and real-world projects, I share everything I learn about
-                    leveraging AI and no-code tools to build amazing things. Let's explore these possibilities
-                    together!
+                  Through weekly insights, practical guides, and behind-the-scenes looks at my own projects
+                  (like PianoLabs), I'm building a resource I wish existed when I started.
+                  Let's explore these possibilities together!
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-4 pt-2">
@@ -154,13 +153,13 @@ export default function Home() {
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-colors"
                   >
                     <XIcon className="w-4 h-4" />
-                    <span>Connect on X</span>
+                    <span>Follow Journey</span>
                   </Link>
                   <Link
                     href="/about"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 transition-colors"
                   >
-                    <span>More About Me</span>
+                    <span>Learn More</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -175,33 +174,33 @@ export default function Home() {
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-teal-50 flex items-center justify-center">
                       <Sparkles className="w-4 h-4 text-teal-600" />
                     </div>
-                    <span className="text-gray-600">Practical no-code solutions for real-world problems</span>
+                    <span className="text-gray-600">Weekly AI discoveries and practical applications</span>
                   </li>
                   <li className="flex gap-3">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-50 flex items-center justify-center">
                       <Brain className="w-4 h-4 text-purple-600" />
                     </div>
-                    <span className="text-gray-600">Latest AI tools and how to use them effectively</span>
+                    <span className="text-gray-600">Hands-on guides for modern tech tools</span>
                   </li>
                   <li className="flex gap-3">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center">
                       <BookOpen className="w-4 h-4 text-blue-600" />
                     </div>
-                    <span className="text-gray-600">Step-by-step guides and detailed tutorials</span>
+                    <span className="text-gray-600">Step-by-step tutorials and real project insights</span>
                   </li>
                 </ul>
               </div>
               <div className="bg-gray-50 rounded-2xl p-8">
                 <h3 className="text-xl font-semibold mb-4">Let's Connect!</h3>
                 <p className="text-gray-600 mb-6">
-                  Join our community of creators and innovators. Share your ideas, ask questions,
-                  and let's build amazing things together.
+                Join me for weekly insights on AI tools, tech developments,
+                and honest stories from the builder's journey. Every week, straight to your inbox
                 </p>
                 <a
                   href="#stay-updated"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-colors"
                 >
-                  <span>Subscribe to Newsletter</span>
+                  <span>Join Newsletter</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -236,10 +235,11 @@ export default function Home() {
                     <span className="text-sm text-gray-500">3 days ago</span>
                   </div>
                   <h3 className="text-lg font-semibold mb-2 group-hover:text-teal-600 transition-colors">
-                    Build an AI Chatbot with No Code
+                  Setting Up a Local LLM with Ollama
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    Create your own ChatGPT-like assistant using no-code tools and AI APIs.
+                  A beginner-friendly guide to running powerful AI models locally.
+                  Perfect for privacy-focused projects and learning.
                   </p>
                 </div>
               </div>
@@ -259,10 +259,10 @@ export default function Home() {
                     <span className="text-sm text-gray-500">1 week ago</span>
                   </div>
                   <h3 className="text-lg font-semibold mb-2 group-hover:text-purple-600 transition-colors">
-                    The Future of AI in No-Code Development
+                  AI Tools That Changed My Workflow in 2025
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    Exploring how AI is revolutionizing the way we build applications without code.
+                  Exploring the latest AI developments and how they're reshaping the way we build and create.
                   </p>
                 </div>
               </div>
@@ -282,10 +282,10 @@ export default function Home() {
                     <span className="text-sm text-gray-500">2 weeks ago</span>
                   </div>
                   <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors">
-                    Automate Your Workflow with AI
+                  From Idea to Launch: Building PianoLabs
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    Step-by-step guide to building powerful automation workflows with modern tools.
+                  Behind the scenes of building an AI music teacher. Tools, challenges, and lessons learned.
                   </p>
                 </div>
               </div>
@@ -297,7 +297,7 @@ export default function Home() {
               href="/blog"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-colors"
             >
-              <span>View All Content</span>
+              <span>Discover More</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -308,19 +308,20 @@ export default function Home() {
       <section id="stay-updated" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-2xl mx-auto text-center">
           <span className="text-sm font-medium text-gray-900 bg-gray-100 px-3 py-1 rounded-full">FREE RESOURCE</span>
-          <h2 className="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">5 AI Tools to Build Apps in 1 Hour</h2>
+          <h2 className="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">The Modern Builder's Toolkit 2025</h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
-            Get instant access to my curated list of game-changing AI tools that will help you build apps faster than ever.
-            Plus, receive weekly tips on no-code development and AI tools.
+          Get instant access to my curated collection of AI tools, setup guides,
+          and workflows that helped me start my creator journey.
+          Plus, receive weekly insights on AI developments and practical tech tips.
           </p>
           <div className="mt-8 flex flex-col items-center">
             <div className="flex items-center gap-2 text-sm text-gray-600 mb-6">
               <CheckCircle2 className="h-5 w-5 text-green-500" />
-              <span>Step-by-step PDF guide</span>
+              <span>Essential AI tools and setup guides</span>
               <CheckCircle2 className="h-5 w-5 text-green-500 ml-4" />
-              <span>Tool comparison matrix</span>
+              <span>Time-saving automation workflows</span>
               <CheckCircle2 className="h-5 w-5 text-green-500 ml-4" />
-              <span>Weekly updates</span>
+              <span>Weekly tech insights and updates</span>
             </div>
             <NewsletterForm />
           </div>
