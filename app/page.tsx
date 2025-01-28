@@ -5,6 +5,7 @@ import Link from "next/link";
 import { NewsletterForm } from "./components/newsletter-form";
 import XIcon from "./XIcon";
 import XSidebar from "./components/XSidebar";
+import { Typewriter } from "@/components/ui/typewriter-text";
 
 export default function Home() {
   return (
@@ -19,38 +20,41 @@ export default function Home() {
         <div className="max-w-6xl mx-auto relative">
           <div className="flex flex-col items-center">
             <div className="mb-6 px-6 py-1.5 rounded-full bg-teal-50 text-teal-600 text-sm font-medium animate-gentle-bounce hover:cursor-pointer">
-              Zero Code, Infinite Possibilities
+              Becoming an AI Creator
             </div>
             <div className="text-center max-w-5xl">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900">
                 <span className="block mb-2">
-                  Transforming Ideas into Reality
+                  Navigate the AI Revolution
                 </span>
-                <span className="block text-3xl md:text-5xl lg:text-6xl mb-2 text-gray-600">
-                  with
-                </span>
-                <span className="block bg-gradient-to-r from-teal-400 to-teal-500 bg-clip-text text-transparent">
-                  AI & No-Code Magic <span className="inline-block">✨</span>
+                <span className="block text-3xl md:text-5xl lg:text-6xl text-gray-600">
+                  <Typewriter
+                    text={"Build • Learn • Grow"}
+                    speed={100}
+                    loop={true}
+                    className="bg-gradient-to-r from-teal-400 to-teal-500 bg-clip-text text-transparent"
+                    delay={3000}
+                  />
                 </span>
               </h1>
             </div>
             <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl text-center mx-auto">
-              Join me on a journey where we harness the power of AI to build amazing apps - no coding required.
-              Let's make tech accessible to everyone!
+            Weekly AI insights, practical tech guides, and honest building stories. 
+            Join me on the journey from beginner to independent creator!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
               <a
                 href="#stay-updated"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-colors text-lg font-medium"
               >
-                <span>Get My No-Code Starter Kit</span>
+                <span>Join The Journey</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
               <Link
-                href="/blog"
+                href="https://x.com/nocodeguy_"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 transition-colors text-lg"
               >
-                <span>Read Blog</span>
+                <span>Let's Talk</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
@@ -62,52 +66,52 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* No-Code Apps */}
+            {/* AI & Tech Insights */}
             <div className="feature-card group">
-              <div className="relative h-full p-8 bg-white rounded-2xl border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+              <div className="relative h-full p-8 bg-white rounded-2xl border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col">
                 <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-teal-50 text-teal-600 group-hover:scale-110 transition-transform">
-                  <Laptop className="w-6 h-6" />
-                </div>
-                <h3 className="mb-3 text-xl font-semibold">No-Code to Apps</h3>
-                <p className="text-gray-600 mb-4">
-                  Discover how to build powerful applications without writing code. From web apps to automation tools, learn the art of no-code development.
-                </p>
-                <Link href="/projects" className="inline-flex items-center text-teal-600 hover:text-teal-700">
-                  View Projects
-                  <ArrowRight className="ml-1 w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-
-            {/* AI & Tech */}
-            <div className="feature-card group">
-              <div className="relative h-full p-8 bg-white rounded-2xl border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-purple-50 text-purple-600 group-hover:scale-110 transition-transform">
-                  <Brain className="w-6 h-6" />
+                  <Bot className="w-6 h-6" />
                 </div>
                 <h3 className="mb-3 text-xl font-semibold">AI & Tech Insights</h3>
-                <p className="text-gray-600 mb-4">
-                  Explore the latest in AI technology and how it's transforming the way we build. Get practical tips and insights on leveraging AI tools.
+                <p className="text-gray-600 mb-4 flex-grow min-h-[80px]">
+                  Weekly explorations of AI developments, tech innovations, and creator stories. From tool reviews to industry trends - discover what's shaping our digital future.
                 </p>
-                <Link href="/blog" className="inline-flex items-center text-purple-600 hover:text-purple-700">
-                  Read Articles
+                <Link href="/blog" className="inline-flex items-center text-teal-600 hover:text-teal-700">
+                  Discover Trends
                   <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
               </div>
             </div>
 
-            {/* Guides & Resources */}
+            {/* Practical Guides */}
             <div className="feature-card group">
-              <div className="relative h-full p-8 bg-white rounded-2xl border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 group-hover:scale-110 transition-transform">
-                  <BookOpen className="w-6 h-6" />
+              <div className="relative h-full p-8 bg-white rounded-2xl border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col">
+                <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-purple-50 text-purple-600 group-hover:scale-110 transition-transform">
+                  <Code2 className="w-6 h-6" />
                 </div>
-                <h3 className="mb-3 text-xl font-semibold">Guides & Resources</h3>
-                <p className="text-gray-600 mb-4">
-                  Step-by-step tutorials and comprehensive guides to help you master no-code tools and modern development practices.
+                <h3 className="mb-3 text-xl font-semibold">Practical Guides</h3>
+                <p className="text-gray-600 mb-4 flex-grow min-h-[80px]">
+                  Step-by-step guides on setting up AI tools and building your own apps. From local LLMs to coding basics - everything you need to get started.
+                </p>
+                <Link href="/blog" className="inline-flex items-center text-purple-600 hover:text-purple-700">
+                  Start Building
+                  <ArrowRight className="ml-1 w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Creator's Toolbox */}
+            <div className="feature-card group">
+              <div className="relative h-full p-8 bg-white rounded-2xl border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col">
+                <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 group-hover:scale-110 transition-transform">
+                  <Blocks className="w-6 h-6" />
+                </div>
+                <h3 className="mb-3 text-xl font-semibold">Creator's Toolbox</h3>
+                <p className="text-gray-600 mb-4 flex-grow min-h-[80px]">
+                  A carefully curated collection of tools, prompts, and workflows that I personally use. Everything you need to start building.
                 </p>
                 <Link href="/apps" className="inline-flex items-center text-blue-600 hover:text-blue-700">
-                  Explore Guides
+                  Browse Resources
                   <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
               </div>
