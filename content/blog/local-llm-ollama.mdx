@@ -1,0 +1,159 @@
+---
+title: "Running DeepSeek-R1 Locally with Ollama: Complete Setup Guide"
+description: "This guide will walk you through setting up and running large language models locally using Ollama. You'll learn how to install Ollama, choose appropriate models, and integrate them into your workflow."
+date: "2025-01-30"
+readTime: "5 min read"
+tags: ["LLM", "Guides", "Ollama", "DeepSeek"]
+thumbnail: "/images/blog/ollama-deepseek/ollama.png"
+author:
+  name: "Ramon"
+  avatar: "/images/avatar.png"
+  x: "nocodeguy_"
+contentUpgrade:
+  title: "AI Landing Page Toolkit"
+  description: "Get our comprehensive toolkit including templates, prompts, and checklists"
+  downloadLink: "/downloads/ai-landing-page-toolkit.pdf"
+relatedPosts:
+  - title: "No-Code Programming Basics"
+    slug: "no-code-programming-basics"
+  - title: "AI Tools Comparison"
+    slug: "ai-tools-comparison"
+featured: true
+---
+
+# **How to use the best ChatGPT-o1 alternative for free and offline**
+
+![Ollama Dashboard Interface](/images/blog/ollama-deepseek/ollama-run.png)
+
+In this guide, you'll learn how to run DeepSeek-R1, the groundbreaking open-source reasoning model, on your local machine using Ollama. This guide covers everything from installation to advanced usage patterns.
+
+## **What is DeepSeek-R1?** 🤖
+
+&nbsp;
+
+DeepSeek-R1 represents a significant advancement in open-source AI, particularly in reasoning capabilities. Released in January 2025, it's specifically designed to:
+
+- 🧠 Execute complex reasoning tasks
+- 🔄 Handle multi-step problem solving
+- 📝 Provide detailed explanations for its reasoning process
+- 💻 Operate efficiently on consumer hardware
+
+## **Why Run LLMs Locally?** 🏠
+
+&nbsp;
+
+Running LLMs locally offers several advantages:
+- 🔒 Complete privacy - your data never leaves your machine
+- 💰 No API costs or usage limits
+- ⚡ Lower latency for faster responses
+- 🌐 Offline capability
+- 🎮 Full control over model parameters
+
+## **Installation** 🛠️
+
+&nbsp;
+
+First, let's install Ollama. The process is straightforward:
+
+```bash
+# For macOS using Homebrew
+brew install ollama
+
+# For Linux
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+You can also install Ollama via their website: **[➡️ Download Ollama](https://ollama.com/)**
+
+
+## Pulling DeepSeek-R1
+
+After installation, you can pull your first model.
+Depending on your system memory, you might want to pull a smaller model.
+I'm running the 1B and 7B parameters model on my MacBook M1 Pro with 16GB RAM.
+
+```bash
+# Pull the DeepSeek-R1 model
+ollama pull deepseek-r1
+```
+
+The code output will look something like this:
+
+![Ollama Installation Process](/images/blog/ollama-deepseek/ollama-run.png)
+
+# **Start a chat session**
+ollama run deepseek-r1
+
+
+## Using Ollama in Python
+
+You can also integrate Ollama into your Python projects. Here's a simple example:
+
+```python
+from ollama import Client
+import asyncio
+
+async def chat_with_model():
+    client = Client()
+    
+    response = await client.chat(
+        model='mistral',
+        messages=[{
+            'role': 'user',
+            'content': 'What are the benefits of local LLMs?'
+        }]
+    )
+    
+    print(response['message']['content'])
+
+asyncio.run(chat_with_model())
+```
+
+![Python Code Integration](/images/blog/ollama-python.jpg)
+
+## **Advanced Configuration**
+
+You can customize the model's behavior using a Modelfile:
+
+```dockerfile
+FROM mistral
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER top_k 40
+SYSTEM You are a helpful AI assistant focused on programming and technology.
+```
+
+## **Performance Tips**
+
+When running models locally, consider these performance tips:
+
+1. **Hardware Requirements**
+   - Minimum 8GB RAM
+   - SSD storage
+   - Modern CPU (or GPU for faster inference)
+
+2. **Model Selection**
+   - Start with smaller models (7B parameters)
+   - Consider quantized versions for better performance
+
+![Performance Comparison Chart](/images/blog/ollama-performance.jpg)
+
+## **Conclusion**
+
+Local LLMs with Ollama provide a powerful way to leverage AI capabilities while maintaining privacy and control. As you get more comfortable with the basics, you can explore more advanced features and larger models.
+
+Remember to check the [official Ollama documentation](https://ollama.com/docs) for the most up-to-date information and advanced usage scenarios.
+
+## **Ready to Level Up?**
+Join the waitlist for my upcoming **AI No-Code Masterclass** and learn how to build entire websites with AI.
+
+---
+
+### About the Author
+<AuthorBio />
+
+### Share this Post
+<ShareOnX />
+
+### Latest from X
+<XFeed />

@@ -46,6 +46,43 @@ export default async function BlogPost({ params }: Props) {
     ShareOnX: () => <ShareOnX title={post.title} url={`https://nocodeguy.dev/blog/${post.slug}`} />,
     ContentUpgrade: () => post.contentUpgrade ? <ContentUpgrade upgrade={post.contentUpgrade} /> : null,
     XFeed,
+    img: ({ src, alt }: { src: string; alt: string }) => (
+      <span className="block my-8">
+        <Image
+          src={src}
+          alt={alt}
+          width={800}
+          height={400}
+          className="rounded-lg"
+        />
+      </span>
+    ),
+    pre: ({ children }: { children: React.ReactNode }) => (
+      <div className="relative">
+        <pre className="mb-4 mt-6 overflow-x-auto rounded-lg bg-gray-200 py-4 px-4 font-mono text-sm text-gray-900">
+          {children}
+        </pre>
+      </div>
+    ),
+    code: ({ children, className }: { children: React.ReactNode; className?: string }) => {
+      const isInline = !className;
+      return isInline ? (
+        <code className="rounded bg-gray-50 px-1 py-0.5 font-mono text-sm text-gray-900">
+          {children}
+        </code>
+      ) : (
+        <code className={className}>{children}</code>
+      );
+    },
+    p: ({ children }: { children: React.ReactNode }) => {
+      if (typeof children === 'object' && children !== null && 'type' in (children as any)) {
+        const child = children as React.ReactElement;
+        if (child.type === 'img') {
+          return children;
+        }
+      }
+      return <p className="mb-4">{children}</p>;
+    }
   };
 
   return (
@@ -100,7 +137,7 @@ export default async function BlogPost({ params }: Props) {
       </div>
 
       {/* Content */}
-      <div className="prose prose-lg max-w-none">
+      <div className="prose prose-lg max-w-none prose-p:my-0 prose-pre:p-0 prose-pre:bg-transparent">
         <MDXRemote source={post.content} components={components} />
       </div>
 
