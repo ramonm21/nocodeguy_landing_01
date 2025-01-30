@@ -161,69 +161,58 @@ export default function Home() {
 
       {/* Newsletter CTA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-            <div className="flex-1 max-w-2xl">
-              <div className="mb-6">
-                <div className="inline-block px-4 py-1 rounded-full bg-teal-400/10 text-teal-300 text-sm font-medium mb-4">
-                  The No-Code AI Newsletter
-                </div>
-                <h2 className="text-3xl font-bold">Build Your First AI App in 7 Days</h2>
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="flex-1">
+              <div className="inline-block px-4 py-1 rounded-full bg-teal-400/10 text-teal-300 text-sm font-medium mb-4">
+                Weekly AI Tips
               </div>
+              <h2 className="text-3xl font-bold mb-4">Build Your First AI App</h2>
               <p className="text-gray-300 text-lg mb-6">
-                Each week, I break down how to build practical AI apps without code. From LLM-powered chatbots 
-                to AI content automation - learn exactly how I build and launch products using only no-code tools.
+                Each week, I share practical guides on building AI apps without code. 
+                From chatbots to automation - learn how to build and launch fast.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="#stay-updated"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-teal-500 text-white hover:bg-teal-400 transition-colors text-lg font-medium group"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-teal-500 text-white hover:bg-teal-400 transition-colors font-medium group"
                 >
-                  <span>Get the Free Guide</span>
+                  <span>Get Free Guide</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
                 </a>
                 <Link
                   href="/resources"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-transparent border border-white/20 text-white hover:bg-white/10 transition-colors text-lg group"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-transparent border border-white/20 text-white hover:bg-white/10 transition-colors group"
                 >
-                  <span>Browse Past Issues</span>
+                  <span>Browse Resources</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </div>
             </div>
-            <div className="flex-1 max-w-sm">
-              <div className="p-1 bg-gradient-to-br from-teal-400 via-teal-500 to-emerald-600 rounded-2xl">
-                <div className="bg-gray-900 p-6 rounded-xl">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-400 to-emerald-500 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="font-medium">7-Day Guide</div>
-                      <div className="text-sm text-gray-400">Build Your First AI App</div>
-                    </div>
+            <div className="flex-shrink-0 w-full max-w-sm">
+              <div className="p-6 bg-white/5 rounded-xl border border-white/10">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-teal-400 to-emerald-500 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
                   </div>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <svg className="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-sm text-gray-300">Step-by-step tutorials</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <svg className="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-sm text-gray-300">No-code tool recommendations</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <svg className="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-sm text-gray-300">Ready-to-use templates</span>
-                    </div>
+                  <div>
+                    <div className="text-sm text-gray-400">What You'll Learn</div>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <svg className="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-sm text-gray-300">Step-by-step tutorials</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <svg className="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-sm text-gray-300">No-code tool recommendations</span>
                   </div>
                 </div>
               </div>
@@ -379,7 +368,7 @@ export default function Home() {
                 </p>
                 <a
                   href="#stay-updated"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-2 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition-colors"
                 >
                   <span>Join Newsletter</span>
                   <ArrowRight className="w-4 h-4" />
