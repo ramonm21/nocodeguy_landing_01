@@ -38,7 +38,7 @@ export default function RootLayout({
             {/* Desktop Navigation */}
             <div className="hidden md:flex gap-8">
               <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
-              <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</Link>
+              <Link href="/resources" className="text-muted-foreground hover:text-foreground transition-colors">Resources</Link>
               <Link href="/apps" className="text-muted-foreground hover:text-foreground transition-colors">Apps</Link>
               <Link href="https://x.com/nocodeguy_" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
                 <XIcon className="h-5 w-5" />
@@ -80,7 +80,7 @@ export default function RootLayout({
                     <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Navigation</h3>
                     <ul className="mt-4 space-y-4">
                       <li>
-                        <Link href="/projects" className="text-base text-gray-500 hover:text-gray-900">Projects</Link>
+                        <Link href="/resources" className="text-base text-gray-500 hover:text-gray-900">Resources</Link>
                       </li>
                       <li>
                         <Link href="/apps" className="text-base text-gray-500 hover:text-gray-900">Apps</Link>
