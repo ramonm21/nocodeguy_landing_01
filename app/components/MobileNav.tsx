@@ -32,7 +32,6 @@ export default function MobileNav() {
     { href: '/blog', label: 'Blog' },
     { href: '/resources', label: 'Resources' },
     { href: '/apps', label: 'Apps' },
-    { href: '/about', label: 'About' },
   ];
 
   return (

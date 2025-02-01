@@ -4,16 +4,16 @@ export default function Imprint() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-8">
-        Legal Notice (Imprint)
+        Impressum
       </h1>
 
       <div className="prose prose-lg max-w-none">
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Information according to § 5 TMG</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Impressum / Imprint</h2>
           <p className="text-gray-600">
-            nocodeguy<br />
-            [Your Street Address]<br />
-            [City, Postal Code]<br />
+            Ramon Melchior<br />
+            Brechkaul 6A<br />
+            55765 Birkenfeld<br />
             Germany
           </p>
         </section>
@@ -21,16 +21,18 @@ export default function Imprint() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">Contact</h2>
           <p className="text-gray-600">
-            Email: contact@nocodeguy.com<br />
-            Twitter: @nocodeguy_
+            Email: hi@nocodeguy.dev<br />
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">Responsible for Content</h2>
           <p className="text-gray-600 mb-4">
-            [Your Full Name]<br />
-            Contact details as above
+            Ramon Melchior<br />
+            Brechkaul 6A<br />
+            55765 Birkenfeld<br />
+            Germany<br />
+            Email: hi@nocodeguy.dev<br />
           </p>
         </section>
 
@@ -59,6 +61,23 @@ export default function Imprint() {
             The contents and works created by the site operators on these pages are subject to German copyright law. 
             Duplication, processing, distribution, or any form of commercialization of such material beyond the scope 
             of the copyright law shall require the prior written consent of its respective author or creator.
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Privacy Policy</h2>
+          <p className="text-gray-600">
+          If the website provides an option to enter personal or business data (e-mail addresses, names, and addresses),
+          the provision of such data by the user is expressly voluntary. <a href="/privacy" className="text-red-500">here</a>.
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">Use of Cookies</h2>
+          <p className="text-gray-600">
+          On certain pages, cookies are used without us being able to notify you in advance. 
+          Most browsers are set to automatically accept cookies. However, you can disable the storage of cookies
+           or configure your browser to store cookies only for the duration of the current internet session.
           </p>
         </section>
 

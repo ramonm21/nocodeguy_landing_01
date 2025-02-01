@@ -43,7 +43,6 @@ export default function RootLayout({
               <Link href="https://x.com/nocodeguy_" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
                 <XIcon className="h-5 w-5" />
               </Link>
-              <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
             </div>
             {/* Mobile Navigation */}
             <div className="flex items-center md:hidden">

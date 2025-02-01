@@ -325,13 +325,6 @@ export default function Home() {
                     <XIcon className="w-4 h-4" />
                     <span>Follow Journey</span>
                   </Link>
-                  <Link
-                    href="/about"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 transition-colors"
-                  >
-                    <span>Learn More</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
                 </div>
               </div>
             </div>

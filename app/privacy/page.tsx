@@ -187,6 +187,10 @@ export default function Privacy() {
             If you have any questions about this Privacy Policy, please contact us by sending an email to hi@nocodeguy.dev
           </p>
         </section>
+
+        <p>
+          <a href="/legal/privacy_policy.pdf" target="_blank" rel="noopener noreferrer" className="text-red-500">Download Full Privacy Policy (PDF)</a>
+        </p>
       </div>
     </main>
   );
